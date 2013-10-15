@@ -1,0 +1,18 @@
+Duplicate data for fast loading with the following keys:
+blogposts:all
+blogpost:<id>
+blogpost:year:<year>
+blogpost:tag:<tag>
+
+Each storage unit will be a JSON blog post
+
+Comments will be stored in separate DB if possible, so that the first one can
+be nuke when needed:
+blostpost:<id>:comments
+
+Each storage unit will be an array of comments related to the specific blog
+post
+
+Tags will be listed independently as well and if possible stored in its own db:
+tags:all
+
