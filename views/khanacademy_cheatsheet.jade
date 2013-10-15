@@ -1,0 +1,70 @@
+extends khanacademy
+
+block mainContent
+  h2 Repositories
+  ul
+    li: :markdown
+      Stable trunk (Latest):  
+      [https://khanacademy.kilnhg.com/Repo/Website/Group/stable](https://khanacademy.kilnhg.com/Repo/Website/Group/stable)
+
+  h2 Deploying
+  ul
+    li: :markdown
+      To deploy:  
+        python deploy/deploy.py --no-secrets --force
+    li: :markdown
+      To deploy to the live site:  
+      Create the secrets file first with the keys, then:  
+      python deploy/deploy.py
+
+  h2 Useful links
+  ul
+    li: a(href='https://sites.google.com/a/khanacademy.org/forge/for-developers') Khan developer guide
+    li: a(href='https://github.com/Khan/khan-exercises') Khan exercise tutorial
+
+  h2 Bug Tracking
+  ul
+    li: a(href='http://code.google.com/p/khanacademy/issues/list?can=2&q=&sort=-opened&colspec=ID%20Type%20Component%20Status%20Stars%20Owner%20Summary%20Modified%20Opened') Most recent opened bug list
+    li: a(href='http://code.google.com/p/khanacademy/issues/list?can=2&q=-Component%3AVideos+-Component%3AQbrary&colspec=ID+Type+Component+Status+Stars+Owner+Summary+Modified&cells=tiles') List of open issues for code
+    li: a(href='http://code.google.com/p/khanacademy/issues/list?can=2&q=Component%3AVideos&colspec=ID+Type+Component+Status+Stars+Owner+Summary+Modified&cells=tiles') List of open issues for video
+    li: a(href='http://code.google.com/p/khanacademy/issues/list?can=2&q=is:starred&colspec=ID+Type+Component+Status+Stars+Owner+Summary+Modified&cells=tiles') My Stared issues
+
+  h2 Newsgroups
+  ul
+    li: a(href='http://groups.google.com/group/khanacademy-developers') Developer discussing group
+    li: a(href='http://groups.google.com/group/khan-academy-topic-ideas') Topic ideas
+    li: a(href='http://groups.google.com/group/khan-academy-feature-requests') Feature requests
+    li: a(href='http://groups.google.com/group/khan-academy-developer-notifications') Developer notification group for commits and reviews
+    li: a(href='http://code.google.com/feeds/p/khanacademy/updates/basic') Developer notification RSS feed
+
+  h2 Coding style
+  ul
+    li indenting: 4 spaces (no tabs)
+    li
+      | Javascript:
+      ul
+        li: a(href='http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml') Google style guide
+        li Good example page 1: javascript/shared-package/discussion.js
+        li Good example page 2: javascript/shared-package/pageutil.js
+    li
+      | Python:
+      ul
+        li: a(href='http://google-styleguide.googlecode.com/svn/trunk/pyguide.html') Google style guide
+
+  h2 Setup
+  ul
+    li: :markdown
+      Sync local data in:  
+      http://localhost:8080/admin/youtubesync?start=1
+    li: :markdown
+      Recent changes in:  
+      sample_data\sample_data.py upload
+    li: :markdown
+      Automate loading exercises in:  
+      sample_data\load_exercises.rb http://localhost:8080
+    li: :markdown
+      Manually load in exercises:  
+      http://localhost:8080/admin94040 use name addition_1 for addition_1.html
+    li: :markdown
+      Expire cache manually:  
+      http://localhost:8080/library_content

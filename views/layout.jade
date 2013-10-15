@@ -1,0 +1,70 @@
+doctype 5
+html(lang="en")
+  head
+    title= pageTitle
+    //link(rel='alternate', type='application/rss+xml', title='RSS' href='/feeds/rss/')
+    //link(rel='shortcut icon' href='/favicon.ico')
+    link(rel='stylesheet', type='text/css', href='/static/css/style7.css')
+  body(id= bodyID)
+    #container
+      #header
+    #dolphincontainer
+      #dolphinnav
+        ul#dolphinnav-ul
+          li.dolphinnav-ul-li
+            a#dolphinnav_blog(href='/'): span BLOG
+          li.dolphinnav-ul-li
+            a#dolphinnav_projects(href='/projects/'): span PROJECTS
+          li.dolphinnav-ul-li
+            a#dolphinnav_resume(href='/resume'): span RESUME
+          li.dolphinnav-ul-li
+            a#dolphinnav_about(href='/about'): span ABOUT
+          li.dolphinnav-ul-li
+            a#dolphinnav_contact(href='/contact'): span CONTACT
+          li.dolphinnav-ul-li
+            a#dolphinnav_other(href='/other'): span OTHER
+    #container2
+      #sidebar1
+        ul
+          li: a#sidebar_blog(href='/') Blog
+          li: a#sidebar_mozilla(href='/mozilla') Mozilla
+          li: a#sidebar_stackexchange(href='/stackexchange') StackExchange
+          li: a#sidebar_khanacademy(href='/khanacademy') Khan Academy
+          li: a#sidebar_compression(href='/compression') Compression
+          li: a#sidebar_math(href='/math') Mathematics
+          li: a#sidebar_other(href='/other') Other 
+        ul
+          li: h3 Profiles
+          li 
+            a(href='http://stackoverflow.com/users/3153/brian-r-bondy', rel='me', target='_blank') StackOverflow
+          li
+            a(href='http://twitter.com/brianbondy', rel='me', target='_blank') Twitter
+          li
+            a(href='http://www.linkedin.com/in/bbondy', rel='me', target='_blank') LinkedIn
+          li
+            a(href='http://www.khanacademy.org/profile/bbondy', rel='me', target='_blank') KhanAcademy 
+          li
+            a(href='https://bugzilla.mozilla.org/buglist.cgi?list_id=3095352;resolution=FIXED;emailtype1=exact;emailassigned_to1=1;query_format=advanced;bug_status=RESOLVED;bug_status=VERIFIED;bug_status=CLOSED;email1=netzen%40gmail.com', rel='me', target='_blank') Firefox work
+
+        ul
+          li: h3 Links
+          li
+            a(href='http://www.billthelizard.com/', target='_blank') Bill the Lizard
+          li
+            a(href='http://www.cforcoding.com/', target='_blank') C for Coding
+          li
+            a(href='http://jalf.dk/blog/', target='_blank') Jalf's Blog
+          li
+            a(href='http://slott-softwarearchitect.blogspot.com/', target='_blank') S.Lott's Blog
+
+      block extraDIV
+      block extraDIV2
+
+      #mainContent
+        block mainContent
+        br(class='clearfloat')
+
+    #footer_container: #footer: p Copyright Brian R. Bondy
+
+    script(type='text/javascript', src='/static/prettify/prettify.js')
+    script(type='text/javascript', src='/static/js/jquery.js')

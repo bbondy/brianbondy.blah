@@ -6,6 +6,20 @@ lib-cov
 *.out
 *.pid
 *.gz
+*.pyc
+*.zip
+settings.py
+.installed.cfg
+bin
+develop-eggs
+dist
+downloads
+backup
+eggs
+parts
+src/*.egg-info
+lib
+lib64
 
 pids
 logs
@@ -13,3 +27,4 @@ results
 
 node_modules
 npm-debug.log
+out.txt

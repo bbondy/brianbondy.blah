@@ -1,0 +1,17 @@
+extends layout
+
+block extraDIV
+  #sidebar2
+    ul
+      li: a(href='/compression/') Main
+      li: a(href='/compression/huffman') Huffman
+      li: a(href='/compression/BWT') Burrows-Wheeler
+      li: a(href='/compression/PPM/') PPM
+
+block mainContent
+  h2 Lossless data compression
+  p The focus of this section will be on lossless data compression, which is my interest.
+  p Lossless data compression allows the exact reconstruction of data from its compressed source.  Lossless data compression is used in many areas such as zip and gzip arbitrary data.
+
+  h2 Lossy data compression
+  p Lossy data compression typically performs better than lossless data compression; however, it does not reconstruct an exact representation of the data.  Some places where lossy data compression is useful is in images, video, and music.

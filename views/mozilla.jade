@@ -1,0 +1,27 @@
+extends layout
+
+block extraDIV
+  #sidebar2
+    ul
+      li.current: a(href='/mozilla/') Main
+      li: a(href='/mozilla/cheatsheet/') Cheat Sheet
+      li: a(href='/mozilla/new/') New to Mozilla
+
+block mainContent
+  h2 Sections
+  ul
+    li
+      a(href='/mozilla/cheatsheet/') Platform Development Cheat Sheet:.
+      | Common commands and resources used for developing Mozilla related technologies.
+    li
+      a(href='/mozilla/new/') New to Mozilla:
+      | Quick tips to get you on your way to becoming a mozillian.
+    li
+      a(href='/mozilla/xpcom/') XPCOM Tutorial:
+      | XPCOM tutorial based on Mozilla 2.0 (and 5.0, 6.0, 7.0, 8.0, 9.0, 10.0) (FF4+).
+    li
+      a(href='/mozilla/xulrunner/') XUL Runner App Tutorial:
+      | XUL Runner tutorial based on Mozilla 2.0, (and 5.0, 6.0, 7.0, 8.0, 9.0, 10.0) (FF4+).
+    li
+      a(href='/mozilla/extension/') Extension Tutorial:
+      | A tutorial on how extensions work specifically with Mozilla 2.0, (and 5.0, 6.0, 7.0, 8.0, 9.0, 10.0) (FF4+).
